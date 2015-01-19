@@ -1,31 +1,16 @@
-{
-  "name": "AFCSVRequestOperation",
-  "version": "1.0.0",
-  "homepage": "https://github.com/acerbetti/AFCSVRequestOperation",
-  "authors": {
-    "Stefano Acerbetti": "acerbetti@gmail.com"
-  },
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
-  "summary": "An extension for AFNetworking that provides an interface to parse CSV using CHCSVParser.",
-  "source": {
-    "git": "https://github.com/ReDetection/AFCSVRequestOperation.git",
-    "tag": "v1.0.0"
-  },
-  "source_files": "AFCSVRequestOperation.{h,m}",
-  "dependencies": {
-    "AFNetworking": [
+Pod::Spec.new do |s|
+  s.name         = "AFCSVRequestOperation"
+  s.version      = "1.0.1"
+  s.summary      = "Add a parallax top view to any UIScrollView just from InterfaceBuilder — no code required"
 
-    ],
-    "CHCSVParser": [
+  s.homepage     = "https://github.com/ReDetection/AFCSVRequestOperation"
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+  s.author       = { "Stefano Acerbetti" => "acerbetti@gmail.com" }
 
-    ]
-  },
-  "platforms": {
-    "ios": "5.0",
-    "osx": "10.7"
-  },
-  "requires_arc": true
-}
+  s.source       = { :git => "https://github.com/ReDetection/AFCSVRequestOperation.git", :commit => "a83f4b31f1153720f516c0d4e93ce895a875136a" }
+  s.source_files = "AFCSVRequestOperation.{h,m}"
+
+  s.platform     = :ios, "5.0"
+  s.requires_arc = true
+
+end
